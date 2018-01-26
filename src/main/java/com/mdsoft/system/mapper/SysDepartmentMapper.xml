@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mdsoft.system.mapper.SysDepartmentMapper">
+	<resultMap id="BaseResultMap" type="com.mdsoft.system.model.SysDepartment">
+		<!-- WARNING - @mbg.generated -->
+		<id column="id" jdbcType="VARCHAR" property="id" />
+		<result column="departname" jdbcType="VARCHAR" property="departname" />
+		<result column="sortname" jdbcType="VARCHAR" property="sortname" />
+		<result column="departnum" jdbcType="VARCHAR" property="departnum" />
+		<result column="parentid" jdbcType="VARCHAR" property="parentid" />
+		<result column="sortnumber" jdbcType="INTEGER" property="sortnumber" />
+		<result column="address" jdbcType="VARCHAR" property="address" />
+		<result column="postcode" jdbcType="VARCHAR" property="postcode" />
+		<result column="telephone" jdbcType="VARCHAR" property="telephone" />
+		<result column="fax" jdbcType="VARCHAR" property="fax" />
+		<result column="email" jdbcType="VARCHAR" property="email" />
+		<result column="leaderid" jdbcType="VARCHAR" property="leaderid" />
+		<result column="remark" jdbcType="VARCHAR" property="remark" />
+		<result column="addperson" jdbcType="VARCHAR" property="addperson" />
+		<result column="addpartyid" jdbcType="VARCHAR" property="addpartyid" />
+		<result column="addtime" jdbcType="TIMESTAMP" property="addtime" />
+		<result column="editperson" jdbcType="VARCHAR" property="editperson" />
+		<result column="editpartyid" jdbcType="VARCHAR" property="editpartyid" />
+		<result column="edittime" jdbcType="TIMESTAMP" property="edittime" />
+		<result column="isdeleted" jdbcType="INTEGER" property="isdeleted" />
+		<result column="delperson" jdbcType="VARCHAR" property="delperson" />
+		<result column="delpartyid" jdbcType="VARCHAR" property="delpartyid" />
+		<result column="deltime" jdbcType="TIMESTAMP" property="deltime" />
+		<result column="delreason" jdbcType="VARCHAR" property="delreason" />
+		<result column="extattrone" jdbcType="VARCHAR" property="extattrone" />
+		<result column="extattrtwo" jdbcType="VARCHAR" property="extattrtwo" />
+		<result column="extattrthree" jdbcType="VARCHAR" property="extattrthree" />
+		<result column="extattrfour" jdbcType="INTEGER" property="extattrfour" />
+		<result column="extattrfive" jdbcType="INTEGER" property="extattrfive" />
+	</resultMap>
+</mapper>

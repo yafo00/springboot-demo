@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mdsoft.system.mapper.SysUserloginMapper">
+	<resultMap id="BaseResultMap" type="com.mdsoft.system.model.SysUserlogin">
+		<!-- WARNING - @mbg.generated -->
+		<id column="id" jdbcType="VARCHAR" property="id" />
+		<result column="username" jdbcType="VARCHAR" property="username" />
+		<result column="password" jdbcType="VARCHAR" property="password" />
+		<result column="partyid" jdbcType="VARCHAR" property="partyid" />
+		<result column="loginstatus" jdbcType="INTEGER" property="loginstatus" />
+		<result column="lockedtime" jdbcType="TIMESTAMP" property="lockedtime" />
+		<result column="remark" jdbcType="VARCHAR" property="remark" />
+		<result column="addperson" jdbcType="VARCHAR" property="addperson" />
+		<result column="addpartyid" jdbcType="VARCHAR" property="addpartyid" />
+		<result column="addtime" jdbcType="TIMESTAMP" property="addtime" />
+		<result column="editperson" jdbcType="VARCHAR" property="editperson" />
+		<result column="editpartyid" jdbcType="VARCHAR" property="editpartyid" />
+		<result column="edittime" jdbcType="TIMESTAMP" property="edittime" />
+		<result column="isdeleted" jdbcType="INTEGER" property="isdeleted" />
+		<result column="delperson" jdbcType="VARCHAR" property="delperson" />
+		<result column="delpartyid" jdbcType="VARCHAR" property="delpartyid" />
+		<result column="deltime" jdbcType="TIMESTAMP" property="deltime" />
+		<result column="delreason" jdbcType="VARCHAR" property="delreason" />
+		<result column="extattrone" jdbcType="VARCHAR" property="extattrone" />
+		<result column="extattrtwo" jdbcType="VARCHAR" property="extattrtwo" />
+		<result column="extattrthree" jdbcType="VARCHAR" property="extattrthree" />
+		<result column="extattrfour" jdbcType="INTEGER" property="extattrfour" />
+		<result column="extattrfive" jdbcType="INTEGER" property="extattrfive" />
+	</resultMap>
+
+	<select id="selectUserloginByUsername" parameterType="String"
+		resultMap="BaseResultMap">
+		select * from where username = #{username}
+	</select>
+</mapper>
